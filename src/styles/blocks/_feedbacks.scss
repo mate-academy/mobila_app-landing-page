@@ -1,6 +1,7 @@
 .feedbacks {
   box-sizing: border-box;
   padding: 58px 0 30px;
+  width: 100vw;
 
   &-links__title {
     text-align: center;
@@ -34,7 +35,6 @@
 
 @media screen and (max-width: 800px) {
   .feedbacks {
-    width: 500px;
     padding-top: 0;
 
     &-links__title {

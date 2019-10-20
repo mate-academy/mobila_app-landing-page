@@ -140,7 +140,8 @@
             flex-wrap: wrap;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
-                justify-content: center; }
+                justify-content: center;
+        text-align: center; }
         .header-container--content__title {
           font-size: 22px;
           line-height: 35px;
@@ -446,8 +447,7 @@ input:checked + .slider:before {
       margin-right: auto;
       width: 60%; }
   .frame-video {
-    width: 38vw;
-    height: 51vh; } }
+    width: 82%; } }
 
 @media screen and (max-width: 840px) {
   .appointment__photo-media--video {
@@ -497,8 +497,7 @@ input:checked + .slider:before {
     background-color: #fff;
     color: #4f4f4f;
     padding-top: 10px;
-    padding-bottom: 0;
-    width: 500px; }
+    padding-bottom: 0; }
     .features-container {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -522,7 +521,8 @@ input:checked + .slider:before {
 .feedbacks {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 58px 0 30px; }
+  padding: 58px 0 30px;
+  width: 100vw; }
   .feedbacks-links__title {
     text-align: center;
     margin-bottom: 63px; }
@@ -550,7 +550,6 @@ input:checked + .slider:before {
 
 @media screen and (max-width: 800px) {
   .feedbacks {
-    width: 500px;
     padding-top: 0; }
     .feedbacks-links__title {
       margin-bottom: 30px; }
