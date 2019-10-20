@@ -1,0 +1,120 @@
+.carousel {
+  position: relative;
+  overflow: hidden;
+
+  &:after {
+    width: 100%;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to left, #f5f5ef 0%,
+    rgba(255, 255, 255, 0) 20%);
+    height: 100%;
+  }
+}
+
+.images {
+  width: 2500px;
+  padding: 0;
+  margin-left: -200px;
+  height: 163px;
+}
+
+.images li {
+  display: inline-block;
+  margin-right: 36px;
+}
+
+.card {
+  width: 309px;
+  height: 161px;
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 4px;
+  position: relative;
+  display: block;
+
+  &-photo {
+    position: absolute;
+    top: 15px;
+    left: 17px;
+  }
+
+  &-twitter {
+    position: absolute;
+    top: 24px;
+    right: 13px;
+  }
+
+  &-user {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: $c-title;
+    margin: 20px 0 0 57px;
+  }
+
+  &-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: $c-text;
+    margin: 23px 13px 24px 17px;
+  }
+}
+
+.darren,
+.klopp {
+  top: -36px;
+}
+
+.udoma,
+.sarri,
+.pep {
+  top: -18px;
+}
+
+.prev {
+  position: absolute;
+  z-index: 9;
+  top: 49px;
+  left: 63px;
+  cursor: pointer;
+}
+
+.next {
+  position: absolute;
+  right: 53px;
+  top: 49px;
+  z-index: 9;
+  cursor: pointer;
+}
+
+.gallery:after {
+  width: 100%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #f5f5ef 0%, rgba(255, 255, 255, 0) 20%);
+  height: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .images {
+    margin-left: -240px;
+  }
+
+  .prev {
+    left: 43px;
+  }
+
+  .next {
+    right: 19px;
+  }
+}

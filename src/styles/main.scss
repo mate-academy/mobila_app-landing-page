@@ -1,7 +1,28 @@
 @import "utils";
-@import "fonts";
-@import "typography";
+
+@import "./blocks/header";
+@import "./blocks/footer";
+@import "./blocks/appointment";
+@import "./blocks/features";
+@import "./blocks/feedbacks";
+@import "./blocks/footer-bottom";
+@import "./blocks/for-start";
+@import "./blocks/main-content";
+@import "./blocks/slider";
 
 body {
-  background: $c-gray;
+  box-sizing: border-box;
+  font-family: Lato, sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
+// .main-content {
+//   position: relative;
+// }
+
+// .appointment__photo-media--background {
+//   background: url('../images/bg-image.png')
+//   width: auto;
+//   height: 805px;
+// }
