@@ -6,7 +6,7 @@
 
   &-container {
     padding: 61px 0 164px 140px;
-    width: 35%;
+    width: 48%;
 
     &--content__title {
       color: $c-title;
@@ -33,7 +33,7 @@
 
   &-images {
     position: relative;
-    width: 70%;
+    width: 52%;
 
     &__phones {
       width: 100%;
@@ -85,6 +85,7 @@
 
   &-image {
     position: absolute;
+    width: 100vw;
 
     & img {
       width: 100%;
@@ -102,6 +103,14 @@
       transform: matrix(1, 0, 0, -1, 0, 0);
       height: 100%;
     }
+  }
+}
+
+.store {
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
   }
 }
 
@@ -133,6 +142,12 @@
   }
 }
 
+@media screen and (max-width: 700px) {
+  .desktop-title {
+    top: 173px;
+  }
+}
+
 @media screen and (max-width: 620px) {
   .desktop {
     height: 400px;
@@ -154,6 +169,12 @@
     &-button {
       top: 360px;
     }
+  }
+}
+
+@media screen and (max-width: 565px) {
+  .desktop-title {
+    top: 142px;
   }
 }
 

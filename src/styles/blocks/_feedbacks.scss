@@ -44,5 +44,9 @@
 
   .feedbacks-links__icons--container {
     padding: 22px 0 25px;
+
+    & a:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
