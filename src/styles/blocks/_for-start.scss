@@ -1,0 +1,177 @@
+.for-start {
+  display: flex;
+  margin-bottom: 60px;
+
+  &--content__text {
+    width: 470px;
+    margin-bottom: 54px;
+  }
+
+  &__image {
+    position: relative;
+    width: 50%;
+    margin-left: 90px;
+
+    &-main {
+      position: absolute;
+      width: 246px;
+      z-index: 2;
+      top: 16%;
+      left: calc(50% - 137px);
+      height: 77%;
+    }
+  }
+}
+
+.elips-point {
+  position: absolute;
+  top: 72%;
+  left: calc(44% - 208px);
+}
+
+.bell-elips {
+  position: absolute;
+  top: 20%;
+  left: 24%;
+  z-index: 3;
+  width: 91px;
+  height: 91px;
+}
+
+.elips-enter {
+  position: absolute;
+  top: 65%;
+  left: 60%;
+  z-index: 4;
+  width: 91px;
+  height: 91px;
+}
+
+.ellips-big {
+  position: absolute;
+  width: 100%;
+  top: 7%;
+  height: 91%;
+}
+
+.ellips-small {
+  position: absolute;
+  top: 21%;
+  left: 17%;
+  width: 67%;
+  height: 63%;
+}
+
+.basket {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .for-start--content__text {
+    width: auto;
+  }
+
+  .for-start__image {
+    margin-left: 20px;
+    width: 44%;
+
+    &-main {
+      width: 220px;
+      top: 20%;
+      left: calc(53% - 137px);
+      height: 69%;
+    }
+  }
+
+  .elips-point {
+    left: calc(51% - 208px);
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .for-start {
+    flex-wrap: wrap;
+
+    &--content__text {
+      margin-left: auto;
+      margin-right: auto;
+      width: 95%;
+      margin-bottom: 21px;
+    }
+
+    &__image {
+      height: 650px;
+      margin: auto;
+      width: 100%;
+
+      &-main {
+        width: 260px;
+        top: 18%;
+        left: calc(48% - 137px);
+        height: 77%;
+      }
+    }
+  }
+
+  .elips-point {
+    left: calc(42% - 212px);
+  }
+
+  .basket {
+    display: block;
+    position: absolute;
+    top: 65%;
+    left: 56%;
+    z-index: 4;
+    width: 91px;
+    height: 91px;
+  }
+
+  .elips-enter {
+    display: none;
+  }
+
+  .bell-elips {
+    top: 23%;
+    left: 33%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .elips-point {
+    left: calc(37% - 194px);
+  }
+
+  .basket {
+    left: 58%;
+  }
+
+  .bell-elips {
+    left: 26%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .elips-point {
+    display: none;
+  }
+
+  .for-start__image-main {
+    width: 213px;
+    top: 26%;
+    left: calc(54% - 137px);
+    height: 60%;
+  }
+
+  .bell-elips {
+    top: 27%;
+    left: 21%;
+  }
+  .ellips-big {
+    position: absolute;
+    width: 100%;
+    top: 7%;
+    height: 91%;
+    // left: -8%;
+  }
+}
