@@ -1,0 +1,146 @@
+.start-play {
+    display: flex;
+
+    &__left {
+        width: 40%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../../../../images/start-play.svg);
+    }
+    
+    &__right {
+        width: 535px;
+        margin: 105px 162px 98px 76px;
+    }
+}
+
+@media (min-width: 1388px) {
+    .start-play {    
+        &__left {
+            width: 70%;
+        }
+    }
+}
+
+@media (max-width: 1387px) {
+    .start-play {   
+        display: flex;
+        justify-content: space-between;
+
+        &__left {
+            width: 70%;
+        }
+        
+        &__right {
+            width: 535px;
+            margin: 105px 100px 98px 36px;
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .start-play {       
+        &__left {
+            height: 426px;
+        }
+        
+        
+        &__right {
+            width: 535px;
+            margin: 70px 50px 30px 36px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .start-play {       
+        &__left {
+            height: 360px;
+        }
+        
+        
+        &__right {
+            width: 535px;
+            margin: 17px 50px 20px 36px;
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    .start-play {
+        flex-direction: column-reverse;
+        align-items: center;
+
+        &__left {
+            display: none;
+        }
+
+        &__right {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin: 70px 50px 70px 36px;
+        }
+    }
+
+    .section-text_start-play {
+        text-align: center;
+    }
+
+    .link-on-loader__start-play {
+        align-self: center;
+    }
+}
+
+@media (max-width: 600px) {  
+    .start-play {
+        flex-direction: column-reverse;
+        align-items: center;
+
+        &__left {
+            display: block;
+            width: 100%;
+            height: 360px;
+            background-size: contain;
+        }
+    } 
+    .link-on-loader {
+        width: 320px;
+    }
+}
+
+@media (max-width: 516px) {  
+    .start-play {
+        &__left {
+            height: 300px;
+        }
+    } 
+}
+
+@media (max-width: 430px) {  
+    .start-play {
+        &__left {
+            height: 240px;
+        }
+    } 
+}
+
+
+@media (max-width: 380px) {   
+    .link-on-loader__start-play {
+        align-self: center;
+    }
+
+    .link-on-loader {
+        width: 150px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 350px) {   
+    .start-play {
+        &__left {
+            height: 210px;
+        }
+    } 
+}

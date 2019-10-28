@@ -1,0 +1,122 @@
+.features {
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../../../../images/blue-features.svg);
+    padding: 76px 135px 66px;
+
+    &__columns {
+        display: flex;
+        flex-direction: column;
+        margin-top: 58px;
+    }
+
+    &__column {
+        display: grid;
+        grid-template-columns: repeat(3, 25%);
+        justify-content: space-between;
+
+        &:first-child {
+            margin-bottom: 50px;
+        }
+
+        &:last-child {
+            margin-top: 50px;
+        }
+    }
+
+    &-title {
+        align-self: center;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 37px;
+        color: #fff;
+    }
+}
+
+.column {
+    &_text {
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 23px;
+        color: #fff;
+    }
+}
+
+@media (max-width: 980px) {
+    .features {
+        padding: 76px 80px 66px;
+
+        &__column {
+            display: grid;
+            grid-template-columns: repeat(3, 25%);
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    .features {
+        padding: 76px 80px 66px;
+
+        &__column {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            &:first-child {
+                margin-bottom: 0;
+            }
+    
+            &:last-child {
+                margin-top: 0;
+            }
+        }
+
+        &-title_black {
+            text-align: center;
+        }
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 540px) {
+    .features {
+        background: #fafafa;
+
+        &__icon {
+            display: none;
+
+            &-mobile {
+                display: block;
+            }
+        }
+
+        &-title_black {
+            color: #4f4f4f;
+        }
+    }
+
+    .column {
+        &_text {
+            text-align: center;
+            color: #4f4f4f;
+        }
+    }
+
+    .dot_black {
+        color: #fafafa;
+    }
+}
+
+@media (max-width: 390px) {
+    .features {
+        padding: 76px 20px 66px;
+    }
+}

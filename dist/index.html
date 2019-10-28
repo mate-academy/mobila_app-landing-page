@@ -2,12 +2,278 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css">
   </head>
   <body>
-    <img src="./images/logo.svg" alt="Logo">
-    <h1>Hello Mate academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <header class="header">
+      <div class="container-header">
+        <div class="header-left">
+          <div class="header-left__logo">
+            <a href="#">
+              <img class="header-left__logo-ball" src="./images/football_logo.svg" alt="">
+            </a>
+          </div>
+
+          <h1 class="header-left__title">Get a personalized football experience tailored just for you</h1>
+          <p class="header-left__text">Achieve super-fan status by getting tailored updates and up-to-the-minute information on your team.</p>
+          <div class="link-on-loader link-on-loader__header-mobile">
+            <a href="#">
+              <img class="link-on-loader__apple link-on-loader__apple-mobile" src="./images/Apple Store.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="./images/Google Play.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-right"></div>
+    </header>
+
+    <section class="what-it">
+      <div class="what-it__left-wrapper">
+        <div class="what-it__left">
+          <img class="what-it__left-picture what-it__left-picture-first" src="./images/what-picture-1.svg" alt="">
+          <img class="what-it__left-picture what-it__left-picture-second" src="./images/what-picture-2.svg" alt="">
+        </div>
+      </div>
+
+      <div class="container-what-it">
+        <div class="what-it__right">
+          <h3 class="section-title_h3">WHAT IT DOES</h3>
+          <h2 class="section-title_h2">An Enhanced Football Experience</h2>
+          <p class="section-text">
+            The Guardian Live Scores app is your go to app for 
+            live scores and watching Premier League goals… Get 
+            in there, what a result!
+          </p>
+          <br>
+          <br>
+          <p class="section-text">
+            As well as videos of all the goals, you can watch match highlights, 
+            check out the latest scores and results and stay bang-up-to-date with 
+            the big football stories from The Guardian publication.
+          </p>
+  
+          <a href="#" class="link">
+            <p class="section-more section-more_what-indent">Learn more</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="started">
+      <div class="container-started">
+        <div class="started__left">
+          <h3 class="section-title_h3">GET STARTED</h3>
+          <h2 class="section-title_h2">User-friendly Interface</h2>
+          <p class="section-text">
+            The in-game goal clips from every Premier League match are 
+            available to Guardian TV customers with a Guardian subscription.
+          </p>
+          <br>
+          <br>
+          <p class="section-text">
+            So, if you’re not a subscriber, now’s the time to make that savvy call. 
+            If that’s a step too far for you, you can still watch loads of firecracker 
+            Premier League action as long as you sign in with a free Guardian iD.
+          </p>
+  
+          <a href="#" class="link">
+            <p class="section-more section-more_what-indent">Learn more</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <div class="started__right"></div>
+    <div class="started__right-mobile-wrapper">
+      <div class="started__right-mobile"></div>
+    </div>
+
+    <section class="features">
+      <h2 class="features-title features-title_black">Features That Will Tailor Your Experience</h2>
+
+      <div class="features__columns">
+        <div class="features__column">
+          <div class="column">
+            <img class="features__icon" src="./images/computer.svg" alt="">
+            <img class="features__icon-mobile" src="./images/baseline-ondemand_video-mobile.svg" alt="">
+            <p class="column_text"><span class="dot_black">•</span> Video highlights for every Premier League and English Football League game</p>
+          </div>
+          <div class="column">
+            <img class="features__icon" src="./images/notifications.svg" alt="">
+            <img class="features__icon-mobile" src="./images/baseline-notifications_active-mobile.svg" alt="">
+            <p class="column_text"><span class="dot_black">•</span> Notifications for your teams, including in-game goal clips and Premier League match highlights for Sky TV subscribers with Guardian.</p>
+          </div>
+          <div class="column">
+            <img class="features__icon" src="./images/hd.svg" alt="">
+            <img class="features__icon-mobile" src="./images/baseline-hd-mobile.svg" alt="">
+            <p class="column_text"><span class="dot_black">•</span> Brand new video section including dedicated areas for your chosen team, trending video, Premier League, Football league and other major leagues</p>
+          </div>
+        </div>
+        <div class="features__column">
+          <div class="column">
+            <img class="features__icon" src=" ./images/flag.svg" alt="">
+            <img class="features__icon-mobile" src="./images/baseline-flag-mobile.svg" alt="">
+            <p class="column_text"><span class="dot_black">•</span> Match pages showing live scores, commentary, team line-ups and enhanced match stats to keep you up-to-date on all the action</p>
+          </div>
+          <div class="column">
+            <img class="features__icon" src="./images/baseline-style-24px.svg" alt="">
+            <img class="features__icon-mobile" src="./images/baseline-style-mobile.svg" alt="">
+            <p class="column_text"><span class="dot_black">•</span> The new picture in picture video mode means you can watch goals, manager interviews and more whilst using other areas of the app – so you don’t need to miss any of the action</p>
+          </div>
+          <div class="column">
+            <img class="features__icon" src="./images/baseline-poll-24px.svg" alt="">
+            <img class="features__icon-mobile" src="./images/baseline-poll-mobile.svg" alt="">
+            <p class="column_text"><span class="dot_black">•</span> Live updated league tables including all the domestic, European and major leagues and tournaments</p>
+          </div>
+        </div> 
+        <div class="features__column">
+          <div class="column">
+            <img class="features__icon" src="./images/baseline-add_to_home_screen-24px.svg" alt="">
+            <img class="features__icon-mobile" src="./images/baseline-add_to_home_screen-mobile.svg" alt="">
+            <p class="column_text"><span class="dot_black">•</span> The Guardian News Vidiprinter. Follow the goals as they go in with our new and improved Vidiprinter</p>
+          </div>
+          <div class="column">
+            <img class="features__icon" src="./images/baseline-people-24px.svg" alt="">
+            <img class="features__icon-mobile" src="./images/baseline-people-mobile.svg" alt="">
+            <p class="column_text"><span class="dot_black">•</span> Match reports, previews and a dedicated news section</p>
+          </div>
+          <div class="column">
+            <img class="features__icon" src="./images/baseline-tune-24px.svg" alt="">
+            <img class="features__icon-mobile" src="./images/baseline-tune-mobile.svg" alt="">
+            <p class="column_text"><span class="dot_black">•</span> And you can achieve super-fan status by personalising your home page with up-to-the-minute information on your team.</p>
+          </div>
+        </div>  
+      </div>
+    </section>
+
+    <section class="slider">
+      <div class="containre-slider slider__title">
+        <h3 class="section-title_h2">What Our Users Say</h3>
+      </div>
+
+      <div class="slider__items">
+        <button class="slider-button__left">
+          <img src="./images/slider-button-left.svg" alt="">
+        </button>
+        <button class="slider-button__right">
+          <img src="./images/slider-button-right.svg" alt="">
+        </button>
+        <img class="items__side-slide" src="./images/slider-left.svg" alt="">
+        <img class="items__first-slide" src="./images/slider-first.svg" alt="">
+        <img class="items__second-slide" src="./images/slider-second.svg" alt="">
+        <div class="items__seond-slide_wrapper">
+          <img src="./images/slider-third.svg" alt="">
+          <button class="slider-button__right-mobile">
+            <img src="./images/slider-button-right.svg" alt="">
+          </button>
+        </div>
+        <img class="items__side-slide" src="./images/slider-right.svg" alt="">
+      </div>
+      
+      <div class="containre-slider slider-pagination_flex">
+        <ul class="slider-pagination">
+          <li class="slider-pagination__circle slider-pagination_first"></li>
+          <li class="slider-pagination__circle slider-pagination_second"></li>
+          <li class="slider-pagination__circle slider-pagination_third"></li>
+          <li class="slider-pagination__circle slider-pagination_fouth"></li>
+          <li class="slider-pagination__circle slider-pagination_fifth"></li>
+          <li class="slider-pagination__circle slider-pagination_sixth"></li>
+          <li class="slider-pagination__circle slider-pagination_seventh"></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="sponsors">
+      <h3 class="section-title_h2 sponsors__title">We have been featured in</h3>
+
+      <div class="sponsors-logos">
+        <a class="sponsors-logo" href="#">
+          <img class="sponsor" src="./images/sports-tv.svg" alt="">
+        </a> 
+        <a class="sponsors-logo" href="#">
+          <img class="sponsor" src="./images/sports.svg" alt="">
+        </a> 
+        <a class="sponsors-logo" href="#">
+          <img class="sponsor" src="./images/nbc-sports-1.svg" alt="">
+        </a> 
+        <a class="sponsors-logo" href="#">
+          <img class="sponsor" src="./images/designer-news.svg" alt="">
+        </a> 
+        <a class="sponsors-logo" href="#">
+          <img class="sponsor" src="./images/designer-technology.svg" alt="">
+        </a> 
+        <a class="sponsors-logo" href="#">
+          <img class="sponsor" src="./images/sky-sports-1.svg" alt="">
+        </a> 
+      </div>
+    </section>
+
+    <section class="start-play">
+      <div class="start-play__left"></div>
+      <div class="start-play__right">
+        <h3 class="section-title_h2 sponsors__title">Get Up Close With Your Team</h3>
+        <p class="section-text section-text_start-play">
+          If you’re interested in the scores of more than one team (it’s OK, we won’t 
+          tell your mates you support two clubs!), you can choose the scores and competitions 
+          that matter to you using the ‘My Scores’ section. So, make sure you’re a top-flight 
+          football fan by downloading the Football Score Centre now. It’s got all this:
+        </p>
+        <div class="link-on-loader link-on-loader__start-play">
+          <a href="#">
+            <img class="link-on-loader__apple" src="./images/Apple Store.svg" alt="">
+          </a>
+          <a href="#">
+            <img src="./images/Google Play.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <a class="footer__logo" href="#">
+        <img src="./images/football_logo-footer.svg" alt="">
+      </a>
+
+      <ul class="footer__menu">
+        <li class="menu-item">
+          <a class="link" href="#">
+          Download
+        </a>
+      </li>
+        <li class="menu-item">
+          <a class="link" href="#">
+          Support
+        </a>
+      </li>
+        <li class="menu-item">
+          <a class="link" href="#">
+          Developers
+        </a>
+      </li>
+        <li class="menu-item">
+          <a class="link" href="#">
+          Privacy
+        </a>
+      </li>
+      </ul>
+
+      <div class="messengers">
+        <a href="#">
+          <img src="./images/twitter.svg" alt="">
+        </a>
+        <a href="#">
+          <img src="./images/facebook.svg" alt="">
+        </a>
+        <a href="#">
+          <img src="./images/insta.svg" alt="">
+        </a>
+      </div>
+    </footer>
   </body>
 </html>

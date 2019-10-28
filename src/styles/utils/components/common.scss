@@ -1,0 +1,53 @@
+.section-title_h3 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: #00adee;
+    margin-bottom: 27px;
+}
+
+.section-title_h2 {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 37px;
+    color: #333;
+    margin-bottom: 27px;
+}
+
+.section-text {
+    font-size: 16px;
+    line-height: 23px;
+    line-height: 1.5;
+    color: #4f4f4f;
+}
+
+.section-more {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: #00adee;
+
+    &_what-indent {
+        margin-top: 22px;
+    }
+
+    &_started-indent {
+        margin-top: 54px;
+    }
+}
+
+.link-on-loader {
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__start-play {
+        margin-top: 35px;
+    }
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+}

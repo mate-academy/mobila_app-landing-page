@@ -1,0 +1,131 @@
+.slider {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        align-self: center;
+    }
+
+    &__items {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-button__left,
+    &-button__right,
+    &-button__right-mobile {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        border-radius: 50%;
+        border: none;
+        background: #fff;
+    }
+
+    &-button__left {
+        top: 50px;
+        left: 88px;
+    }
+    
+    &-button__right {
+        top: 50px;
+        right: 150px;
+    }
+
+    &-button__right-mobile {
+        opacity: 0;
+        top: 54px;
+    }
+
+    &-pagination {
+        display: flex;
+        justify-content: space-between;
+        width: 143px;
+
+        &_flex {
+            align-self: center;
+        }
+
+        &__circle {
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+        }
+    
+        &_first {
+            background: #828282;
+        }
+
+        &_second {
+            background: #979595;
+        }
+
+        &_third {
+            background: #b2b0b0;
+        }
+
+        &_fouth {
+            background: #cdcbcb;
+        }
+
+        &_fifth {
+            background: #e2e1e1;
+        }
+
+        &_sixth {
+            background: #eee;
+        }
+
+        &_seventh {
+            background: #f7f7f7;
+        }
+    }
+}
+
+@media (max-width: 1350px) {
+    .items {
+        &__second-slide {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 1037px) {
+    .items {
+        &__first-slide {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .slider {
+        &-button__left,
+        &-button__right {
+            display: none;
+        }
+
+        &-button__right-mobile {
+            opacity: 1;
+        }
+        
+        &__items {
+            justify-content: center;
+        }
+    }
+
+    .items {
+        &__side-slide {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .slider {
+        &-button__right-mobile {
+            right: 55px;
+        }
+    }
+}

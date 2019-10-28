@@ -1,0 +1,114 @@
+.started {
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../../../../images/started.svg);
+
+    &__right {
+        display: none;
+        height: 450px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(../../../../images/started.svg);
+    }
+
+    &__right-mobile {
+        display: none;
+        width: 280px;
+        height: 450px;
+        margin-top: 60px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../../../../images/started-mobile.svg);
+
+        &-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 980px) {
+    .started {
+        height: 40vh;
+        background: #fff;
+
+        &__right {
+            background-size: contain;
+            display: block;
+        }
+    }
+
+    .container-started {
+        max-width: 100%;
+        padding: 100px 100px 20px 100px;
+    }
+}
+
+@media (max-width: 780px) {
+    .started {
+        &__right {
+            background-size: contain;
+            display: block;
+            height: 380px;
+        }
+    }
+}
+
+@media (max-width: 730px) {
+    .started {
+        &__right {
+            background-size: contain;
+            display: block;
+            height: 330px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .started {
+        &__right {
+            margin-top: 30px;
+            background-size: contain;
+            display: block;
+            height: 270px;
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .started {
+        &__right {
+            display: none;
+            margin-top: 0;
+        }
+
+        &__right-mobile {
+            display: block;
+            margin-top: 140px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .container-started {
+        padding: 40px 50px 120px 50px;
+    }
+
+    .started {
+        &__right-mobile {
+            margin-top: 50px;
+        }
+    }
+}
+
+@media (max-width: 390px) {
+    .container-started {
+        padding: 10px 20px 120px 20px;
+    }
+
+    .section-title_h3 {
+        text-align: center;
+    }
+}

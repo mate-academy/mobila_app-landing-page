@@ -1,0 +1,125 @@
+.header {
+    width: 100%;
+    display: flex;
+    background: #f4f6f9;
+
+  &-right {
+    width: 100%;
+    background-image: url(../../../../images/footer_phones.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &-left__logo {
+    height: 30px;
+    margin-bottom: 133px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &-left {
+    width: 100%;
+
+    &__title {
+      margin-bottom: 30px;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 48px;
+      letter-spacing: 0.03em;
+      color: #333;
+    }
+
+    &__text {
+      margin-bottom: 50px;
+      font-size: 18px;
+      line-height: 26px;
+      color: #4f4f4f;
+    }
+  }
+}
+
+@media (max-width: 1420px) {
+  .header-left__title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1065px) {
+  .container-header {
+    margin: 63px 0 164px 100px;
+  }
+}
+
+@media (max-width: 955px) {
+  .header-left__title {
+    width: 300px;
+    font-size: 30px;
+  }
+
+  .header-left__text,
+  .header-left__title {
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 540px) {
+  .header-left__logo {
+    width: 280px;
+  }
+
+  .container-header {
+    margin: 63px 0 164px 20px;
+  }
+
+  .header-left__text {
+    font-size: 15px;
+  }
+
+  .link-on-loader__header-mobile {
+    width: 320px;
+  }
+}
+
+@media (max-width: 540px) {
+  .header-right {
+    display: none;
+  }
+
+  .header-left__logo {
+    margin-bottom: 90px;
+    justify-content: center;
+  }
+
+  .link-on-loader__apple-mobile {
+    margin-bottom: 10px;
+  }
+
+  .container-header {
+    margin: 33px 0 70px 100px;
+  }
+
+  .header-left__text {
+    width: 290px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container-header {
+    margin: 33px 0 70px 50px;
+  }
+}
+
+@media (max-width: 450px) {
+ .link-on-loader__header-mobile {
+   width: 300px;
+   flex-direction: row;
+   flex-wrap: wrap;
+ }
+}
+
+@media (max-width: 390px) {
+  .container-header {
+    margin: 33px 0 70px 20px;
+  }
+}
